@@ -38,7 +38,7 @@ jobs:
         uses: cloudbees-io/kaniko@v1
         kind: build
         with:
-          destination: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:tag1
+          destination: 020229604682.dkr.ecr.us-east-1.amazonaws.com/throwaway/actions/vulnerable-image:tag0.5
           tar-path: container-image.tar
           build-args: |
             USER=cbp
