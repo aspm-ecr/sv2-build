@@ -42,4 +42,4 @@ jobs:
           tar-path: container-image.tar
           build-args: |
             USER=cbp
-            TOKEN=${{ secrets.GH_SECURITY_PAT }}
+            TOKEN=${{ secrets.GH_SECURITY_PAT }} 
