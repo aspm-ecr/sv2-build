@@ -1,0 +1,13 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: deploy
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: demo-go-service
+          artifact-id: 234e0f95-fbec-4e08-8123-fae23f3f3166
+          target-environment: Pre-Prod
