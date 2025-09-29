@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
-          labels: demo-go-service
-          artifact-id: 234e0f95-fbec-4e08-8123-fae23f3f3166
+          labels: aspm-ecr/sv2-build
+          artifact-id: e7138669-4944-488b-aeaf-8e06852abc6c
           target-environment: Pre-Prod
